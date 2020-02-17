@@ -5,8 +5,11 @@ trigger:
 pool: samplePool
 
 steps:
-  - task: CmdLine@2
-    inputs:
-     script:
-      javac HelloWorld.java
-      java HelloWorld
+    - task: Bash@3
+      inputs:
+        targetType: 'inline'
+        script: |
+          javac HelloWorld.java
+           
+          
+           java HelloWorld
