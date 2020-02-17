@@ -6,7 +6,7 @@ pool: samplePool
 
 steps:
   - task: CmdLine@2
-  inputs:
-    script:
+    inputs:
+     script:
       javac HelloWorld.java
       java HelloWorld
